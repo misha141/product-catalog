@@ -3,9 +3,11 @@ package Service;
 import model.Category;
 import model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import repository.CategoryRepository;
 import repository.ProductRepository;
 
+@Service
 public class ProductCatalogService {
     @Autowired
     private CategoryRepository categoryRepository;
